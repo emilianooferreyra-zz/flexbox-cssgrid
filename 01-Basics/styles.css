@@ -1,0 +1,84 @@
+body {
+  box-sizing: border-box;
+  margin:0;
+  background: #ff9966;  /* fallback for old browsers */ 
+  background: -webkit-linear-gradient(to right, #ff5e62, #ff9966);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ff5e62, #ff9966); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.container {
+  background-color: white;
+  height: calc( 100vh - 20px );
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px 30px 0 30px;
+}
+h1, h2 {
+  text-align: center;
+  font-family: 'IBM Plex Serif', serif;
+}
+h2 {
+  color:white;
+}
+
+.container-flex {
+  display: flex;
+  border: 3px solid black;
+  /* Directions 
+  flex-direction: row; */
+  /* Wrap 
+  flex-wrap: wrap; */
+  /* Flex flow - column o row and wrap, nowrap o wrap-reverse */
+  flex-flow: row wrap;
+
+  /* Align Elements horizontally */
+  justify-content: flex-start;
+  justify-content: flex-end;
+  justify-content: center;
+  justify-content: space-around;
+  justify-content: space-between;
+
+  /* Align items for elements vertically */
+  height: 400px;
+  align-items: flex-start;
+  align-items: flex-end;
+  align-items: baseline;
+  align-items: center;
+}
+
+.element-flex {
+  padding: 10px;
+  /* flex-grow: 1; */
+  /* Flex: take 3 parameters: 1) flex-grow, 2) flex-shrink, 3) flex-basis */
+  /* flex: 1 0 auto; */
+}
+
+.element-flex:nth-child(1) {
+  /* order: 3; */
+  background-color: #E53935;
+  align-self: flex-start;
+}
+
+.element-flex:nth-child(2) {
+  /* order: 1; */
+  background-color: #8E24AA;
+  /* flex-grow: 0;
+  flex-shrink: 0; */
+  /* flex-basis: 50%; */
+}
+
+.element-flex:nth-child(3) {
+  /* order: 2; */
+  background-color: #3F51B5;
+  align-self: stretch;
+}
+
+/* @media screen and (min-width: 768px) {
+  .element-flex:nth-child(3) {
+    order: -1;
+    background-color: #3F51B5;
+  }
+  .element-flex:nth-child(2) {
+    order: 3;
+  }
+} */
