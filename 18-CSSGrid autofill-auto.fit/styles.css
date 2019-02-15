@@ -1,0 +1,46 @@
+h2 {
+  margin: 0;
+}
+    
+.services {
+  border: 3px solid black;
+  height: 300px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(5. 200px);
+  grid-template-columns: repeat(auto-fill, 200px);
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+
+.service {
+  color: white;
+  text-align: center;
+}
+
+.service-1 {
+  background-color: darkviolet;
+}
+
+.service-2 {
+  background-color: rgb(8, 77, 8);
+}
+
+.service-3 {
+  background-color: teal;
+}
+
+.service-4 {
+  background-color: cornflowerblue;
+}
+
+.service-5 {
+  background-color: crimson;
+}
+
+.service-6{
+  background-color: maroon;
+}
