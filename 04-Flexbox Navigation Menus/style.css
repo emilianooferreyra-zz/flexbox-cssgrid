@@ -178,7 +178,7 @@ nav ul a {
   content: "\f0d2";
 }
 
-/* merged social and dropdown */
+/* Merged Social and Dropdown */
 .navigation-social-dropdown {
   display: flex;
   justify-content: space-between;
