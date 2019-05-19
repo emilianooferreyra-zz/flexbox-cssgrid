@@ -1,0 +1,76 @@
+html {
+  box-sizing: border-box;
+  min-height: 100%;
+}
+
+*, *:before, *:after {
+box-sizing: inherit;
+}
+
+body {
+  min-height: 100%;
+  font-family: 'Montserrat', sans-serif;
+  background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+}
+
+h1 {
+  text-align: center;
+}
+
+.centered {
+  background-image: url(./hamburguesa.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.centered > div {
+  flex: 0 0 calc(33.3% - 3rem);
+}
+
+.content-centered {
+  color: #ffffff;
+  text-align: center;
+}
+
+.content-centered h1 {
+  color: #e0ab10;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.content-centered p {
+  margin: 0;
+}
+
+.content-centered .location {
+  font-weight: 900;
+  font-size: 1.4rem;
+}
+
+.notification {
+  background-color: #e0ab10;
+  padding: 1rem;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.notification span {
+  font-size: 3rem;
+  display: block;
+}
+
+.up {
+  align-self: flex-start;
+  margin-top: 2rem;
+}
+
+.down {
+  align-self: flex-end;
+  margin-bottom: 2rem;
+}
+
